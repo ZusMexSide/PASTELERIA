@@ -1,7 +1,10 @@
-body {
+
+body,h1, h2,span{
   font-family: 'Libre Franklin', sans-serif;
 }
-
+p{
+  font-family: 'Open Sans', sans-serif;
+}
 #header, footer {
   background-color: #222 !important;
 }
@@ -47,7 +50,19 @@ body {
 #carousel .overlay .row {
   height: 100%;
 }
-
+#about-us{
+  margin-top: 100px;
+}
+#about-us img{
+border-radius: 13px !important;
+}
+#about-us hr {
+    margin: 10px auto;
+    border: 2px solid #c1a35f;;
+    max-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 @media (min-width:1200px) {
   .recientes {
     height: 172.5px !important;
@@ -87,7 +102,10 @@ body {
     padding-left: 85px;
   }
 }
+.subtitulos-icon{
 
+  color: #c1a35f;
+}
 .color-noticias {
   font-weight: 400;
   color: #F2F2F2;
@@ -112,4 +130,7 @@ body {
   font-family: 'Tangerine', cursive;
   color: #c1a35f;
   font-size: 50px;
+}
+span{
+  font-weight:500;
 }
