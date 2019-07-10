@@ -16,34 +16,34 @@
   <title>La Artesanal</title>
 </head>
 
-<body>
-  <header id="principal" class="fixed-top mb-5">
+<body data-spy="scroll" data-target="#navbar" data-offset="72">
+  <header id="principal" class="fixed-top ">
     <nav id="header" class=" navbar navbar-expand-lg navbar-light bg-light pb-3 pt-3 ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Pasteleria La Artesanal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active ">
-              <a class="nav-link seleccionado" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link sombreado" href="#main">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link sombreado">¿Quiénes somos?</a>
+              <a href="#about-us" class="nav-link sombreado">¿Quiénes somos?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link sombreado" href="#">Noticias</a>
+              <a class="nav-link sombreado" href="#noticias">Noticias</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link sombreado">Contacto</a>
+              <a href="#contacto" class="nav-link sombreado">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <main id="main">
+  <main id="main"class="">
     <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -69,19 +69,21 @@
         </div>
       </div>
     </div>
-    <article id="about-us">
+    </main>
+    <!--¿Quiénes somos?-->
+    <article id="about-us" class="pt-5">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center display-5 mb-lg-5">
-            <h2>¿Quiénes somos?</h2>
+            <h2 class="mt-5">¿Quiénes somos?</h2>
             <hr>
           </div>
         </div>
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-6 col-12 text-center mb-3 mb-lg-5">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="col-lg-6 col-12 text-center mb-lg-5">
@@ -89,13 +91,56 @@
           </div>
         </div>
       </div>
-    </article>
-    <!--noticias-->
-    <section id="noticias" class="mt-5 mb-5 ">
       <div class="container">
         <div class="row">
+          <div class="col-12 text-center display-5 mt-5 ">
+            <h2>El sabor inigualable de nuestros chefs</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col-12 banner banner-aboutUs">
+              <div class=" overlay2">
+                <div class="container">
+                  <div class="row text-center ">
+                    <div class="col-6">
+                      <div class="row justify-content-center">
+                        <div class="col-6">
+                          <div class=" tarjeta-foto mt-4">
+                            <img src="img/chaquetillas-de-cocina-joel-blanco.jpg" class="card-img-top img-fluid   " width="25%" alt="...">
+                            <div class="card-body padding-texto">
+                              <h5 class="">Erick Montalvo Galicia</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 ">
+                      <div class="row justify-content-center">
+                        <div class="col-6 ">
+                          <div class="tarjeta-foto mt-4">
+                            <img src="img/images%20(2).jpg" class="card-img-top img-fluid " alt="...">
+                            <div class="card-body padding-texto">
+                              <h5 class="">Card title</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+    <!--noticias-->
+    <section id="noticias" class="pt-5 ">
+      <div class="container ">
+        <div class="row">
           <div class="col-12 text-center text-uppercase ">
-            <h2>ultimas noticias</h2>
+            <h2 class="pt-4">ultimas noticias</h2>
           </div>
           <div class="col-12 text-center mb-5 subtitulos-icon mb-5">
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
@@ -106,7 +151,7 @@
         <div class="row">
           <div class="col-md-4 mb-4 ">
             <div class="card text-center  color-noticias">
-              <img class="card-img-top" src="img/47421769_1001938429990608_6366422261854896128_n.jpg" class="card-img-top" alt="...">
+              <img src="img/47421769_1001938429990608_6366422261854896128_n.jpg" class="card-img-top" alt="...">
               <div class="card-body  ">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -159,10 +204,81 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#" class="btn btn-block
+             btn-primary   size ">Leer más</a>
+          </div>
+        </div>
       </div>
     </section>
-  </main>
-  <footer>
+    <!--contacto-->
+    <section class="contacto pt-5" id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center display-5 mb-lg-5">
+            <h2 class="mt-5">Contactanos</h2>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 mt-5">
+        <div class="row">
+          <div class="col-12">
+            <form >
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Nombres:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre completo">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Apellidos</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tus apellidos">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 ">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Cuentanos ¿Cómo te podemos ayudar?:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="text-center">
+                  <button type="submit" class="btn btn-primary size size1">Submit</button>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ">
+        <div class="row mt-5 mapas">
+          <div class="col-12 mb-5">
+            <h2 class="text-center mt-5">Visitanos en nuestros disintos establecimientos</h2>
+            <hr>
+          </div>
+        <div class="col-12  col-xl-4 mb-4">
+          <h3 class="text-center mb-3">Matriz</h3>
+          <iframe class="ml-auto mr-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.460111017843!2d-97.39262478518015!3d18.462806487442624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bcda643394cf%3A0x91eee08fa4f25d83!2sPasteler%C3%ADa+La+Artesanal!5e0!3m2!1ses!2smx!4v1562709157894!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-12 col-xl-4 mb-4">
+          <h3 class="text-center mb-3">Sucursal 2</h3>
+          <iframe class="ml-auto mr-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.460111017843!2d-97.39262478518015!3d18.462806487442624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bcda643394cf%3A0x91eee08fa4f25d83!2sPasteler%C3%ADa+La+Artesanal!5e0!3m2!1ses!2smx!4v1562709157894!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-12 col-xl-4 mb-4">
+          <h3 class="text-center mb-3">Sucursal </h3>
+          <iframe class="ml-auto mr-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.460111017843!2d-97.39262478518015!3d18.462806487442624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bcda643394cf%3A0x91eee08fa4f25d83!2sPasteler%C3%ADa+La+Artesanal!5e0!3m2!1ses!2smx!4v1562709157894!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  <!--footer-->
+  <footer class="mt-5">
     <div class="container pb-2 pt-2">
       <div class="row text-center text-white ">
         <div class="col-12 mb-4">
